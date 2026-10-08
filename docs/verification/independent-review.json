@@ -10,7 +10,7 @@
   "repository": "mcp-contract-guard",
   "scope": "Coordinating-agent review, separate from implementation worker; not third-party certification.",
   "local_path_redaction": "Personal host prefixes replaced. Original receipt hashes below describe the unredacted local source; exports have separate hashes.",
-  "publication_change_scope": "README/AGENTS/contributor/context/evidence exports and ignore/attribute portability only. Runtime, tests, fixtures and dependency pins remain as accepted.",
+  "publication_change_scope": "Project/contributor docs and portable receipt exports, plus a folded YAML scalar correction in the pip CI step. Exact pip command, runtime, tests, fixtures and dependency pins unchanged.",
   "command_receipt_exports": [
     {
       "path": "docs/verification/main-command-00-final-main-tests.json",

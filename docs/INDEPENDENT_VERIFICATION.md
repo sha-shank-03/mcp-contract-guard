@@ -27,3 +27,9 @@ The [structured review](verification/independent-review.json) records the origin
 - [main-command-02-final-main-dependency-health.json](verification/main-command-02-final-main-dependency-health.json)
 
 The implementation and fixture bytes have not been changed for publication. Added project/contributor guidance and receipt exports are documentation. Historical worker evidence remains dated to its original run; pending-review statements in that historical evidence are superseded by this final review.
+
+## Publication workflow correction
+
+The first public push on 2026-10-08 exposed a YAML syntax error in the dependency-install step: its plain scalar contained `--only-binary=:all:`. [The rejected run](https://github.com/sha-shank-03/mcp-contract-guard/actions/runs/37721489192) ran no jobs. Local implementation tests had passed, but the previous static workflow review did not detect this syntax error.
+
+The step now uses a folded YAML scalar. PyYAML 6.0.3 parses all ten portfolio workflows, and the parsed pip command is byte-for-byte the intended command. Runtime, dependency pins and test behavior are unchanged. The correction is committed separately; its hosted result appears in Actions and is separate from this local parse check.

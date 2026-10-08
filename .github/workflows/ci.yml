@@ -37,7 +37,8 @@ jobs:
           python-version: '3.11.9'
           architecture: x64
       - name: Install only the exact hash-locked wheels
-        run: python -m pip install --require-hashes --only-binary=:all: -r requirements.lock
+        run: >-
+          python -m pip install --require-hashes --only-binary=:all: -r requirements.lock
       - name: Verify dependency closure
         run: python -m pip check
       - name: M1 regression tests
