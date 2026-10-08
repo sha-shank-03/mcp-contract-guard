@@ -1,0 +1,126 @@
+{
+  "checkedAtUtc": "2026-10-07T16:13:21.2257676Z",
+  "command": "Get-Process -Id <saved serverPid> -ErrorAction SilentlyContinue",
+  "scope": "One-time PID lookup for 17 local mock children; no descendant containment claim",
+  "probes": [
+    {
+      "report": "m1/snapshot.json",
+      "serverPid": 7696,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m1/healthy.json",
+      "serverPid": 32144,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m1/bad-output.json",
+      "serverPid": 4848,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m1/missing-result-type.json",
+      "serverPid": 3004,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m2/snapshot.json",
+      "serverPid": 21584,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m2/healthy.json",
+      "serverPid": 3536,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m2/bad-output.json",
+      "serverPid": 25260,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m2/fallback.json",
+      "serverPid": 29516,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m2/input-witness.json",
+      "serverPid": 10348,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m2/output-witness.json",
+      "serverPid": 19504,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m2/review-only.json",
+      "serverPid": 6376,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m2/expected-errors.json",
+      "serverPid": 34136,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m2/paged-shapes.json",
+      "serverPid": 1956,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m2/cursor-loop.json",
+      "serverPid": 30532,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m2/duplicate-id.json",
+      "serverPid": 33816,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m2/unsupported-version.json",
+      "serverPid": 34568,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "report": "m2/input-required.json",
+      "serverPid": 31680,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "caseVersion": 1,
+  "protocolVersion": "2026-07-28",
+  "cases": [
+    {"id": "scalar", "tool": "sum", "arguments": {"a": 2, "b": 3}, "expect": {"kind": "success"}, "expectedStructuredContent": 5},
+    {"id": "array", "tool": "echo", "arguments": {"value": [1, "fictional"]}, "expect": {"kind": "success"}, "expectedStructuredContent": [1, "fictional"]},
+    {"id": "object", "tool": "echo", "arguments": {"value": {"count": 2}}, "expect": {"kind": "success"}, "expectedStructuredContent": {"count": 2}}
+  ]
+}

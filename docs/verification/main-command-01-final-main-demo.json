@@ -1,0 +1,18 @@
+{
+  "slug": "mcp-contract-guard",
+  "label": "final-main-demo",
+  "argv": [
+    "<local-portfolio>\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+    "scripts/demo.py",
+    "--out-dir",
+    "work/main-final-demo-20261008"
+  ],
+  "cwd": "<local-portfolio>\\mcp-contract-guard",
+  "started_at_utc": "2026-10-08T02:23:33.385405+00:00",
+  "duration_seconds": 48.688,
+  "exit_code": 0,
+  "timed_out": false,
+  "stdout": "snapshot: expected exit 0 verified\nhealthy: expected exit 0 verified\nbad-output: expected exit 1 verified\nfallback: expected exit 0 verified\ninput-witness: expected exit 1 verified\noutput-witness: expected exit 1 verified\nreview-only: expected exit 1 verified\nexpected-errors: expected exit 0 verified\npaged-shapes: expected exit 0 verified\ncursor-loop: expected exit 1 verified\nduplicate-id: expected exit 1 verified\nunsupported-version: expected exit 1 verified\ninput-required: expected exit 1 verified\ndiff-identical: expected exit 0 verified\ndiff-changed: expected exit 1 verified\nDEMO PASS: 15 scenarios asserted; intentional fault exits verified; no model calls.\n",
+  "stderr": "",
+  "scope": "independently executed by main; result alone does not imply full acceptance"
+}

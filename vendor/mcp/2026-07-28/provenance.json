@@ -1,0 +1,10 @@
+{
+  "protocolVersion": "2026-07-28",
+  "upstreamCommit": "271ecc9accafdd9b83a3c869fa67c22953b2af80",
+  "schemaUrl": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/271ecc9accafdd9b83a3c869fa67c22953b2af80/schema/2026-07-28/schema.json",
+  "schemaSha256": "ef70b61f99b6d2e5e3b46863822eab08dff6a45bedc7a08914e0e5b133f40203",
+  "schemaBytes": 181474,
+  "licenseUrl": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/271ecc9accafdd9b83a3c869fa67c22953b2af80/LICENSE",
+  "retrievedDate": "2026-10-07",
+  "notice": "Preserve the complete upstream LICENSE: Apache-2.0 transition with retained MIT contributions; documentation excluding specifications is CC-BY-4.0."
+}

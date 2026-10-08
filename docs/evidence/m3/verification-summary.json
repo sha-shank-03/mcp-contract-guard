@@ -1,0 +1,32 @@
+{
+  "recordedAtUtc": "2026-10-08T02:19:28.955861+00:00",
+  "interpreter": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+  "phase": "M3 ready for whole-repository independent review",
+  "totalTestsAcrossFiveModuleRuns": 39,
+  "singleAggregateSuiteRun": false,
+  "freshAssertingDemoScenarios": 15,
+  "demoExit": 0,
+  "literalPowerShellCliScenarios": 4,
+  "literalCliExits": [
+    0,
+    0,
+    1,
+    0
+  ],
+  "mockDirectChildPidProbes": 17,
+  "pidsPresentAtProbe": 0,
+  "unchangedProtectedFiles": 57,
+  "finalSourceManifestFiles": 49,
+  "allExpectedCliExitsAndFindingsPassed": true,
+  "baselineAndCandidateBytesPreserved": true,
+  "existingNoticeCopiesVerified": 6,
+  "sourceAndLocalDocumentationLinksVerified": true,
+  "hostedCiExecuted": false,
+  "unexecutedChecks": [
+    "Main whole-repository independent final acceptance remains pending.",
+    "Linux/POSIX runtime and hosted GitHub CI have not run; workflow was prepared/static-checked, not actionlint/GitHub YAML validated.",
+    "No new bootstrap/install, package build, publication/push, deployment, or remote workflow dispatch during M3.",
+    "No live production server/model/provider, upstream Inspector/conformance, security audit, universal schema containment, or benchmark.",
+    "No descendant containment, automatic retry/recapture, new protocol/transport/SDK/provider, or runtime dependency expansion."
+  ]
+}

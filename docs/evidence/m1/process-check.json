@@ -1,0 +1,22 @@
+[
+  {
+    "report": "snapshot.json",
+    "serverPid": 21524,
+    "stillPresent": false
+  },
+  {
+    "report": "healthy.json",
+    "serverPid": 34760,
+    "stillPresent": false
+  },
+  {
+    "report": "bad-output.json",
+    "serverPid": 34472,
+    "stillPresent": false
+  },
+  {
+    "report": "missing-result-type.json",
+    "serverPid": 3540,
+    "stillPresent": false
+  }
+]

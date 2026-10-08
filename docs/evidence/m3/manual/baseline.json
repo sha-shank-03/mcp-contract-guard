@@ -1,0 +1,35 @@
+{
+  "snapshotVersion": 1,
+  "protocolVersion": "2026-07-28",
+  "schemaSha256": "ef70b61f99b6d2e5e3b46863822eab08dff6a45bedc7a08914e0e5b133f40203",
+  "executionMode": "local_mock_stdio",
+  "serverInfo": {
+    "name": "mock-sum",
+    "version": "1.0.0"
+  },
+  "tools": [
+    {
+      "name": "sum",
+      "description": "Add two fictional fixture integers.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "a": {
+            "type": "integer"
+          },
+          "b": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "a",
+          "b"
+        ],
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "integer"
+      }
+    }
+  ]
+}

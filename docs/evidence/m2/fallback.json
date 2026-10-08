@@ -1,0 +1,109 @@
+{
+  "reportVersion": 1,
+  "protocolVersion": "2026-07-28",
+  "schemaSha256": "ef70b61f99b6d2e5e3b46863822eab08dff6a45bedc7a08914e0e5b133f40203",
+  "executionMode": "local_mock_stdio",
+  "scope": "M2: modern stdio, bounded catalog, explicit cases and reviewed baseline",
+  "status": "pass",
+  "findings": [],
+  "observations": [
+    {
+      "ruleId": "RESULT_TYPE_DEFAULT",
+      "method": "server/discover",
+      "requestId": 1,
+      "caseId": null,
+      "tool": null,
+      "pointer": "/result/resultType",
+      "source": "https://modelcontextprotocol.io/specification/2026-07-28/basic",
+      "summary": "Absent resultType accepted as complete by the required compatibility default.",
+      "rawSchemaIssues": [
+        {
+          "instancePointer": "",
+          "schemaPointer": "/required",
+          "keyword": "required"
+        }
+      ],
+      "affectsExitCode": false
+    },
+    {
+      "ruleId": "RESULT_TYPE_DEFAULT",
+      "method": "tools/list",
+      "requestId": 2,
+      "caseId": null,
+      "tool": null,
+      "pointer": "/result/resultType",
+      "source": "https://modelcontextprotocol.io/specification/2026-07-28/basic",
+      "summary": "Absent resultType accepted as complete by the required compatibility default.",
+      "rawSchemaIssues": [
+        {
+          "instancePointer": "",
+          "schemaPointer": "/required",
+          "keyword": "required"
+        }
+      ],
+      "affectsExitCode": false
+    },
+    {
+      "ruleId": "RESULT_TYPE_DEFAULT",
+      "method": "tools/call",
+      "requestId": 3,
+      "caseId": "sum-normal",
+      "tool": "sum",
+      "pointer": "/result/resultType",
+      "source": "https://modelcontextprotocol.io/specification/2026-07-28/basic",
+      "summary": "Absent resultType accepted as complete by the required compatibility default.",
+      "rawSchemaIssues": [
+        {
+          "instancePointer": "",
+          "schemaPointer": "/required",
+          "keyword": "required"
+        }
+      ],
+      "affectsExitCode": false
+    }
+  ],
+  "cases": [
+    {
+      "caseId": "sum-normal",
+      "tool": "sum",
+      "status": "pass",
+      "observedOutcome": "success"
+    }
+  ],
+  "compatibility": {
+    "baselineProvided": true,
+    "assessment": "supplied_cases_and_exact_drift_only",
+    "inputWitnesses": 0,
+    "outputWitnesses": 0,
+    "universalCompatibilityProven": false
+  },
+  "coverage": {
+    "requestsExecuted": 3,
+    "requestsSelfValidated": 3,
+    "casesEvaluated": 1,
+    "casesExecuted": 1,
+    "casesSkipped": 0,
+    "toolListPages": 1,
+    "catalogBytes": 245,
+    "baselineTools": 1,
+    "baselineValidInputs": 1,
+    "notImplemented": [
+      "general schema containment",
+      "MRTR continuation",
+      "HTTP",
+      "legacy profiles"
+    ]
+  },
+  "exitCode": 0,
+  "elapsedMs": 6156.0,
+  "cleanup": {
+    "directChildExited": true,
+    "forcedTermination": false,
+    "readerThreadsStopped": true,
+    "serverPid": 29516,
+    "stderrBytes": 0,
+    "cancellationAttempted": false,
+    "cancellationWriteCompleted": false,
+    "descendantContainment": "not_provided"
+  }
+}

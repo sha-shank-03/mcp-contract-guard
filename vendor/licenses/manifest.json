@@ -1,0 +1,54 @@
+{
+  "recordedAtUtc": "2026-10-08T02:06:14.788187+00:00",
+  "scope": "Exact notices copied from the existing hash-locked installed runtime distributions; no new package install",
+  "notices": [
+    {
+      "package": "jsonschema",
+      "version": "4.25.1",
+      "installedNotice": "jsonschema-4.25.1.dist-info/licenses/COPYING",
+      "copiedNotice": "vendor/licenses/jsonschema-4.25.1-COPYING",
+      "bytes": 1057,
+      "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439"
+    },
+    {
+      "package": "referencing",
+      "version": "0.36.2",
+      "installedNotice": "referencing-0.36.2.dist-info/licenses/COPYING",
+      "copiedNotice": "vendor/licenses/referencing-0.36.2-COPYING",
+      "bytes": 1057,
+      "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+    },
+    {
+      "package": "attrs",
+      "version": "25.3.0",
+      "installedNotice": "attrs-25.3.0.dist-info/licenses/LICENSE",
+      "copiedNotice": "vendor/licenses/attrs-25.3.0-LICENSE",
+      "bytes": 1109,
+      "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+    },
+    {
+      "package": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "installedNotice": "jsonschema_specifications-2025.9.1.dist-info/licenses/COPYING",
+      "copiedNotice": "vendor/licenses/jsonschema-specifications-2025.9.1-COPYING",
+      "bytes": 1057,
+      "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+    },
+    {
+      "package": "rpds-py",
+      "version": "0.27.1",
+      "installedNotice": "rpds_py-0.27.1.dist-info/licenses/LICENSE",
+      "copiedNotice": "vendor/licenses/rpds-py-0.27.1-LICENSE",
+      "bytes": 1076,
+      "sha256": "8bcb72c82ea8ae74802293c41d93ad7d51434001b0ae45a603a5af0f507aee0a"
+    },
+    {
+      "package": "typing-extensions",
+      "version": "4.15.0",
+      "installedNotice": "typing_extensions-4.15.0.dist-info/licenses/LICENSE",
+      "copiedNotice": "vendor/licenses/typing-extensions-4.15.0-LICENSE",
+      "bytes": 13936,
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    }
+  ]
+}

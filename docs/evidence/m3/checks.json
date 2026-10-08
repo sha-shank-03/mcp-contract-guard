@@ -1,0 +1,216 @@
+{
+  "recordedAtUtc": "2026-10-08T02:15:30.803693+00:00",
+  "interpreter": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+  "pythonVersion": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "commands": [
+    {
+      "label": "test_m1*.py",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_m1*.py",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+      "observedExit": 0,
+      "stdout": "",
+      "stderr": "test_bad_output_cli_returns_actionable_failure_without_value (test_m1.M1Integration.test_bad_output_cli_returns_actionable_failure_without_value) ... ok\ntest_invalid_case_document_exits_two_before_launch (test_m1.M1Integration.test_invalid_case_document_exits_two_before_launch) ... ok\ntest_local_deadline_and_skipped_case_cleanup (test_m1.M1Integration.test_local_deadline_and_skipped_case_cleanup) ... ok\ntest_malformed_and_strict_envelope_failures (test_m1.M1Integration.test_malformed_and_strict_envelope_failures) ... ok\ntest_missing_result_type_does_not_hide_other_bad_fields (test_m1.M1Integration.test_missing_result_type_does_not_hide_other_bad_fields) ... ok\ntest_missing_result_type_required_default_passes (test_m1.M1Integration.test_missing_result_type_required_default_passes) ... ok\ntest_snapshot_and_healthy_scalar_case_cli (test_m1.M1Integration.test_snapshot_and_healthy_scalar_case_cli) ... ok\ntest_stderr_is_drained_without_retaining_values (test_m1.M1Integration.test_stderr_is_drained_without_retaining_values) ... ok\ntest_local_schema_reference_and_blocked_remote (test_m1.M1Validation.test_local_schema_reference_and_blocked_remote) ... ok\ntest_pathological_validation_is_killed_at_deadline (test_m1.M1Validation.test_pathological_validation_is_killed_at_deadline) ... ok\ntest_schema_policy_distinguishes_subschemas_from_enum_data (test_m1.M1Validation.test_schema_policy_distinguishes_subschemas_from_enum_data) ... ok\ntest_strict_json_rejects_nonfinite_and_duplicate_keys (test_m1.M1Validation.test_strict_json_rejects_nonfinite_and_duplicate_keys) ... ok\ntest_vendored_pin_and_requests (test_m1.M1Validation.test_vendored_pin_and_requests) ... ok\ntest_document_at_exact_limit_is_accepted (test_m1_corrections.BoundedInput.test_document_at_exact_limit_is_accepted) ... ok\ntest_oversized_read_consumes_only_limit_plus_one_bytes (test_m1_corrections.BoundedInput.test_oversized_read_consumes_only_limit_plus_one_bytes) ... ok\ntest_existing_collisions_preserve_all_bytes_and_never_launch (test_m1_corrections.CliPreservation.test_existing_collisions_preserve_all_bytes_and_never_launch) ... ok\ntest_nonexistent_normalized_alias_creates_nothing (test_m1_corrections.CliPreservation.test_nonexistent_normalized_alias_creates_nothing) ... ok\ntest_oversized_case_input_is_preserved_and_rejected_before_launch (test_m1_corrections.CliPreservation.test_oversized_case_input_is_preserved_and_rejected_before_launch) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 24.407s\n\nOK\n",
+      "testsReported": 18,
+      "reportedSeconds": 24.407
+    },
+    {
+      "label": "test_m2_contracts.py",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_m2_contracts.py",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+      "observedExit": 0,
+      "stdout": "",
+      "stderr": "test_baseline_validity_is_checked_before_launch (test_m2_contracts.M2Contracts.test_baseline_validity_is_checked_before_launch) ... ok\ntest_cli_check_and_diff_preserve_reviewed_inputs (test_m2_contracts.M2Contracts.test_cli_check_and_diff_preserve_reviewed_inputs) ... ok\ntest_concrete_input_and_output_witnesses_and_review_are_separate (test_m2_contracts.M2Contracts.test_concrete_input_and_output_witnesses_and_review_are_separate) ... ok\ntest_cursor_duplicate_page_tool_and_byte_bounds (test_m2_contracts.M2Contracts.test_cursor_duplicate_page_tool_and_byte_bounds) ... ok\ntest_empty_offline_catalog_still_requires_the_vendored_schema_pin (test_m2_contracts.M2Contracts.test_empty_offline_catalog_still_requires_the_vendored_schema_pin) ... ok\ntest_error_expectation_must_match_mechanism_and_integer_code (test_m2_contracts.M2Contracts.test_error_expectation_must_match_mechanism_and_integer_code) ... ok\ntest_expected_success_and_both_error_mechanisms (test_m2_contracts.M2Contracts.test_expected_success_and_both_error_mechanisms) ... ok\ntest_offline_diff_never_claims_schema_change_proves_incompatibility (test_m2_contracts.M2Contracts.test_offline_diff_never_claims_schema_change_proves_incompatibility) ... ok\ntest_optional_schema_change_passes_case_but_requires_review (test_m2_contracts.M2Contracts.test_optional_schema_change_passes_case_but_requires_review) ... ok\ntest_pagination_and_all_three_structured_shapes (test_m2_contracts.M2Contracts.test_pagination_and_all_three_structured_shapes) ... ok\ntest_removed_tool_witness_and_catalog_drift (test_m2_contracts.M2Contracts.test_removed_tool_witness_and_catalog_drift) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 45.624s\n\nOK\n",
+      "testsReported": 11,
+      "reportedSeconds": 45.624
+    },
+    {
+      "label": "test_m2_wire.py",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_m2_wire.py",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+      "observedExit": 0,
+      "stdout": "",
+      "stderr": "test_boolean_error_code_in_case_config_rejected_before_launch (test_m2_wire.M2Wire.test_boolean_error_code_in_case_config_rejected_before_launch) ... ok\ntest_raw_framing_content_envelopes_ids_and_error_shapes (test_m2_wire.M2Wire.test_raw_framing_content_envelopes_ids_and_error_shapes) ... ok\ntest_silent_call_cancellation_and_no_retry_are_observed (test_m2_wire.M2Wire.test_silent_call_cancellation_and_no_retry_are_observed) ... ok\ntest_tool_error_cannot_satisfy_success_or_rpc_error_expectations (test_m2_wire.M2Wire.test_tool_error_cannot_satisfy_success_or_rpc_error_expectations) ... ok\ntest_unsupported_advertised_and_peer_version_errors_do_not_fallback (test_m2_wire.M2Wire.test_unsupported_advertised_and_peer_version_errors_do_not_fallback) ... ok\ntest_valid_input_required_is_unsupported_coverage_not_malformed (test_m2_wire.M2Wire.test_valid_input_required_is_unsupported_coverage_not_malformed) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 36.926s\n\nOK\n",
+      "testsReported": 6,
+      "reportedSeconds": 36.926
+    },
+    {
+      "label": "test_m2_preservation.py",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_m2_preservation.py",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+      "observedExit": 0,
+      "stdout": "",
+      "stderr": "test_baseline_and_both_diff_inputs_are_protected_from_report_aliases (test_m2_preservation.M2InputPreservation.test_baseline_and_both_diff_inputs_are_protected_from_report_aliases) ... ok\ntest_cli_tool_limit_cannot_create_an_unreadable_snapshot_format (test_m2_preservation.M2InputPreservation.test_cli_tool_limit_cannot_create_an_unreadable_snapshot_format) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 2.717s\n\nOK\n",
+      "testsReported": 2,
+      "reportedSeconds": 2.717
+    },
+    {
+      "label": "test_demo.py",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_demo.py",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+      "observedExit": 0,
+      "stdout": "",
+      "stderr": "test_existing_demo_directory_is_preserved_even_with_optimization (test_demo.DemoGate.test_existing_demo_directory_is_preserved_even_with_optimization) ... ok\ntest_gate_rejects_incorrect_exit_label_coverage_and_missing_fault (test_demo.DemoGate.test_gate_rejects_incorrect_exit_label_coverage_and_missing_fault) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.348s\n\nOK\n",
+      "testsReported": 2,
+      "reportedSeconds": 0.348
+    },
+    {
+      "label": "interpreter",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+      "observedExit": 0,
+      "stdout": "Python 3.11.9\n",
+      "stderr": ""
+    },
+    {
+      "label": "dependency-closure",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+      "observedExit": 0,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    },
+    {
+      "label": "compile",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "mcp_contract_guard",
+        "examples",
+        "tests",
+        "scripts"
+      ],
+      "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+      "observedExit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "help-root",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "--help"
+      ],
+      "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+      "observedExit": 0,
+      "stdout": "usage: __main__.py [-h] {snapshot,check,diff} ...\n\nBounded modern MCP stdio contract checks and offline diff; no model calls.\n\npositional arguments:\n  {snapshot,check,diff}\n\noptions:\n  -h, --help            show this help message and exit\n",
+      "stderr": ""
+    },
+    {
+      "label": "help-snapshot",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "snapshot",
+        "--help"
+      ],
+      "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+      "observedExit": 0,
+      "stdout": "usage: __main__.py snapshot [-h] --out OUT [--report REPORT]\n                            [--validation-timeout VALIDATION_TIMEOUT]\n                            [--run-timeout RUN_TIMEOUT]\n                            [--request-timeout REQUEST_TIMEOUT]\n                            [--max-pages MAX_PAGES] [--max-tools MAX_TOOLS]\n                            [--max-catalog-bytes MAX_CATALOG_BYTES]\n                            [--execution-mode {local_stdio,local_mock_stdio}]\n                            ...\n\npositional arguments:\n  command               After --, executable and literal arguments.\n\noptions:\n  -h, --help            show this help message and exit\n  --out OUT\n  --report REPORT       Write the versioned JSON report, including failures.\n  --validation-timeout VALIDATION_TIMEOUT\n  --run-timeout RUN_TIMEOUT\n  --request-timeout REQUEST_TIMEOUT\n  --max-pages MAX_PAGES\n  --max-tools MAX_TOOLS\n  --max-catalog-bytes MAX_CATALOG_BYTES\n  --execution-mode {local_stdio,local_mock_stdio}\n                        Caller-supplied report label; use local_mock_stdio for\n                        the mock.\n",
+      "stderr": ""
+    },
+    {
+      "label": "help-check",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--help"
+      ],
+      "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+      "observedExit": 0,
+      "stdout": "usage: __main__.py check [-h] --cases CASES [--baseline BASELINE]\n                         [--report REPORT]\n                         [--validation-timeout VALIDATION_TIMEOUT]\n                         [--run-timeout RUN_TIMEOUT]\n                         [--request-timeout REQUEST_TIMEOUT]\n                         [--max-pages MAX_PAGES] [--max-tools MAX_TOOLS]\n                         [--max-catalog-bytes MAX_CATALOG_BYTES]\n                         [--execution-mode {local_stdio,local_mock_stdio}]\n                         ...\n\npositional arguments:\n  command               After --, executable and literal arguments.\n\noptions:\n  -h, --help            show this help message and exit\n  --cases CASES\n  --baseline BASELINE   Consume a reviewed pinned snapshot without modifying\n                        it.\n  --report REPORT       Write the versioned JSON report, including failures.\n  --validation-timeout VALIDATION_TIMEOUT\n  --run-timeout RUN_TIMEOUT\n  --request-timeout REQUEST_TIMEOUT\n  --max-pages MAX_PAGES\n  --max-tools MAX_TOOLS\n  --max-catalog-bytes MAX_CATALOG_BYTES\n  --execution-mode {local_stdio,local_mock_stdio}\n                        Caller-supplied report label; use local_mock_stdio for\n                        the mock.\n",
+      "stderr": ""
+    },
+    {
+      "label": "help-diff",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "diff",
+        "--help"
+      ],
+      "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+      "observedExit": 0,
+      "stdout": "usage: __main__.py diff [-h] [--report REPORT]\n                        [--validation-timeout VALIDATION_TIMEOUT]\n                        [--run-timeout RUN_TIMEOUT]\n                        baseline candidate\n\npositional arguments:\n  baseline\n  candidate\n\noptions:\n  -h, --help            show this help message and exit\n  --report REPORT       Write the versioned JSON report, including failures.\n  --validation-timeout VALIDATION_TIMEOUT\n  --run-timeout RUN_TIMEOUT\n",
+      "stderr": ""
+    },
+    {
+      "label": "demo-help",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "scripts/demo.py",
+        "--help"
+      ],
+      "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+      "observedExit": 0,
+      "stdout": "usage: demo.py [-h] [--out-dir OUT_DIR]\n\nAsserting deterministic stdio demo; no network, replay, model, or retry.\n\noptions:\n  -h, --help         show this help message and exit\n  --out-dir OUT_DIR  New directory for receipts/reports; existing directories\n                     are refused.\n",
+      "stderr": ""
+    }
+  ]
+}

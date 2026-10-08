@@ -1,0 +1,20 @@
+{
+  "recordedAtUtc": "2026-10-07T15:36:49.022095+00:00",
+  "python": "3.11.9",
+  "suiteCommand": ".\\.venv\\Scripts\\python.exe -m unittest discover -s tests -v",
+  "observedExit": 0,
+  "testsPassed": 18,
+  "runnerReportedSeconds": 20.84,
+  "newTests": 5,
+  "existingAliasCliSubcases": 10,
+  "readProbeBytesConsumed": 1048577,
+  "exactLimitBytesAccepted": 1048576,
+  "mockScenarioExits": [
+    0,
+    0,
+    1,
+    0
+  ],
+  "savedPidsNotPresent": 4,
+  "notes": "Observed worker execution results; raw CLI argv and outputs retained in adjacent collision receipts and docs/evidence/m1/commands.json."
+}

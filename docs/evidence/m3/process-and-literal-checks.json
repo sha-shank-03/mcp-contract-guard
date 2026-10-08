@@ -1,0 +1,298 @@
+{
+  "recordedAtUtc": "2026-10-08T02:17:13.4935790Z",
+  "interpreter": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+  "serverScript": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+  "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+  "literalCommandMethod": "README Resolve-Path variables and native PowerShell invocation; output paths changed to an owned fresh evidence directory",
+  "commands": [
+    {
+      "label": "snapshot",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "snapshot",
+        "--out",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\manual\\baseline.json",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\manual\\snapshot.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "healthy"
+      ],
+      "expectedExit": 0,
+      "observedExit": 0,
+      "combinedConsole": "PASS protocol=2026-07-28 mode=local_mock_stdio exit=0\r\n",
+      "reportExit": 0,
+      "coverage": {
+        "requestsExecuted": 2,
+        "requestsSelfValidated": 2,
+        "casesEvaluated": 0,
+        "casesExecuted": 0,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 245,
+        "baselineTools": 0,
+        "baselineValidInputs": 0,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      }
+    },
+    {
+      "label": "healthy",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--cases",
+        "examples\\cases.json",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\manual\\healthy.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "healthy"
+      ],
+      "expectedExit": 0,
+      "observedExit": 0,
+      "combinedConsole": "PASS protocol=2026-07-28 mode=local_mock_stdio exit=0\r\n",
+      "reportExit": 0,
+      "coverage": {
+        "requestsExecuted": 3,
+        "requestsSelfValidated": 3,
+        "casesEvaluated": 1,
+        "casesExecuted": 1,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 245,
+        "baselineTools": 0,
+        "baselineValidInputs": 0,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      }
+    },
+    {
+      "label": "bad-output",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--cases",
+        "examples\\cases.json",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\manual\\bad-output.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "bad-output"
+      ],
+      "expectedExit": 1,
+      "observedExit": 1,
+      "combinedConsole": "FAIL protocol=2026-07-28 mode=local_mock_stdio exit=1\r\nOUTPUT_SCHEMA case=sum-normal /: Structured output fails the tool's declared schema.\r\n  Action: Return structuredContent conforming to outputSchema.\r\n",
+      "reportExit": 1,
+      "coverage": {
+        "requestsExecuted": 3,
+        "requestsSelfValidated": 3,
+        "casesEvaluated": 1,
+        "casesExecuted": 1,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 245,
+        "baselineTools": 0,
+        "baselineValidInputs": 0,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      }
+    },
+    {
+      "label": "missing-result-type",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--cases",
+        "examples\\cases.json",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\manual\\missing-result-type.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "missing-result-type"
+      ],
+      "expectedExit": 0,
+      "observedExit": 0,
+      "combinedConsole": "PASS protocol=2026-07-28 mode=local_mock_stdio exit=0\r\nOBSERVATION RESULT_TYPE_DEFAULT: Absent resultType accepted as complete by the required compatibility default.\r\nOBSERVATION RESULT_TYPE_DEFAULT: Absent resultType accepted as complete by the required compatibility default.\r\nOBSERVATION RESULT_TYPE_DEFAULT: Absent resultType accepted as complete by the required compatibility default.\r\n",
+      "reportExit": 0,
+      "coverage": {
+        "requestsExecuted": 3,
+        "requestsSelfValidated": 3,
+        "casesEvaluated": 1,
+        "casesExecuted": 1,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 245,
+        "baselineTools": 0,
+        "baselineValidInputs": 0,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      }
+    }
+  ],
+  "baselineSha256Before": "F8BEB6491403CC905381CB0A98FF0BCB6D785CEB37709A0646872D739FE000E0",
+  "baselineSha256After": "F8BEB6491403CC905381CB0A98FF0BCB6D785CEB37709A0646872D739FE000E0",
+  "processProbeCommand": "Get-Process -Id <saved serverPid> -ErrorAction SilentlyContinue",
+  "processProbeScope": "One-time lookup for 13 demo and 4 manual direct mock children; no descendant containment claim",
+  "processProbes": [
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\demo\\snapshot.json",
+      "serverPid": 29008,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\demo\\healthy.json",
+      "serverPid": 25444,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\demo\\bad-output.json",
+      "serverPid": 2508,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\demo\\fallback.json",
+      "serverPid": 10884,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\demo\\input-witness.json",
+      "serverPid": 2500,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\demo\\output-witness.json",
+      "serverPid": 10648,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\demo\\review-only.json",
+      "serverPid": 18044,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\demo\\expected-errors.json",
+      "serverPid": 11232,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\demo\\paged-shapes.json",
+      "serverPid": 18624,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\demo\\cursor-loop.json",
+      "serverPid": 28544,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\demo\\duplicate-id.json",
+      "serverPid": 30228,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\demo\\unsupported-version.json",
+      "serverPid": 25572,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\demo\\input-required.json",
+      "serverPid": 18068,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\manual\\snapshot.json",
+      "serverPid": 31268,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\manual\\healthy.json",
+      "serverPid": 32048,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\manual\\bad-output.json",
+      "serverPid": 32064,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    },
+    {
+      "reportPath": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m3\\manual\\missing-result-type.json",
+      "serverPid": 5104,
+      "pidPresentAtProbe": false,
+      "directChildExitedInReport": true,
+      "readerThreadsStoppedInReport": true
+    }
+  ]
+}

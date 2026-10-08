@@ -1,0 +1,113 @@
+{
+  "recordedAtUtc": "2026-10-07T16:14:42.724736+00:00",
+  "scope": "M2 only; local Windows Python 3.11.9",
+  "testRuns": [
+    {
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_m1*.py",
+        "-v"
+      ],
+      "testsReported": 18,
+      "observedExit": 0,
+      "reportedSeconds": 25.65,
+      "resultSource": "Actual unittest console output displayed in the worker chat; no full transcript retained"
+    },
+    {
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_m2_contracts.py",
+        "-v"
+      ],
+      "testsReported": 11,
+      "observedExit": 0,
+      "reportedSeconds": 57.569,
+      "resultSource": "Actual unittest console output displayed in the worker chat; no full transcript retained"
+    },
+    {
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_m2_wire.py",
+        "-v"
+      ],
+      "testsReported": 6,
+      "observedExit": 0,
+      "reportedSeconds": 35.095,
+      "resultSource": "Actual unittest console output displayed in the worker chat; no full transcript retained"
+    },
+    {
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_m2_preservation.py",
+        "-v"
+      ],
+      "testsReported": 2,
+      "observedExit": 0,
+      "reportedSeconds": 3.392,
+      "resultSource": "Actual unittest console output displayed in the worker chat; no full transcript retained"
+    }
+  ],
+  "totalTestsAcrossSeparateModuleRuns": 37,
+  "singleAggregateSuiteRun": false,
+  "m2CliScenarios": 15,
+  "refreshedM1CliScenarios": 4,
+  "allExpectedCliExitsAndRequiredFindingsPassed": true,
+  "reviewedBaselineBytesPreserved": true,
+  "directChildPidProbes": 17,
+  "pidsPresentAtProbe": 0,
+  "additionalCommands": [
+    {
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "mcp_contract_guard",
+        "examples",
+        "tests"
+      ],
+      "observedExit": 0
+    },
+    {
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "observedExit": 0,
+      "stdout": "No broken requirements found."
+    }
+  ],
+  "unexecutedChecks": [
+    "Main independent M2 acceptance review remains pending.",
+    "M3 release/CI work and Linux runtime/CI have not been executed.",
+    "Upstream Inspector/conformance and live production servers have not been executed.",
+    "No live model/provider call, packaging, publication, deployment, security audit, or benchmark.",
+    "No general schema containment/universal compatibility proof, HTTP/legacy/MRTR continuation, or descendant containment."
+  ]
+}

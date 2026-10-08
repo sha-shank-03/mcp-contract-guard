@@ -1,0 +1,7 @@
+{
+  "caseVersion": 1,
+  "protocolVersion": "2026-07-28",
+  "cases": [
+    {"id": "sum-normal", "tool": "sum", "arguments": {"a": 2, "b": 3}, "expectedStructuredContent": 5}
+  ]
+}

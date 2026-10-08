@@ -1,0 +1,625 @@
+{
+  "recordedAtUtc": "2026-10-07T16:05:25.139732+00:00",
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+  "execution": "local deterministic mock and offline snapshot diff; no model calls",
+  "baselineSha256BeforeChecks": "f8beb6491403cc905381cb0a98ff0bcb6d785ceb37709a0646872d739fe000e0",
+  "baselineSha256AfterChecks": "f8beb6491403cc905381cb0a98ff0bcb6d785ceb37709a0646872d739fe000e0",
+  "commands": [
+    {
+      "label": "snapshot",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "snapshot",
+        "--out",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\reviewed-baseline.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\snapshot.json",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "healthy"
+      ],
+      "expectedExit": 0,
+      "observedExit": 0,
+      "stdout": "PASS protocol=2026-07-28 mode=local_mock_stdio exit=0\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 2,
+        "requestsSelfValidated": 2,
+        "casesEvaluated": 0,
+        "casesExecuted": 0,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 245,
+        "baselineTools": 0,
+        "baselineValidInputs": 0,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      },
+      "assertedRule": null
+    },
+    {
+      "label": "healthy",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--baseline",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\reviewed-baseline.json",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\cases.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\healthy.json",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "healthy"
+      ],
+      "expectedExit": 0,
+      "observedExit": 0,
+      "stdout": "PASS protocol=2026-07-28 mode=local_mock_stdio exit=0\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 3,
+        "requestsSelfValidated": 3,
+        "casesEvaluated": 1,
+        "casesExecuted": 1,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 245,
+        "baselineTools": 1,
+        "baselineValidInputs": 1,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      },
+      "assertedRule": null
+    },
+    {
+      "label": "bad-output",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--baseline",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\reviewed-baseline.json",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\cases.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\bad-output.json",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "bad-output"
+      ],
+      "expectedExit": 1,
+      "observedExit": 1,
+      "stdout": "FAIL protocol=2026-07-28 mode=local_mock_stdio exit=1\nOUTPUT_SCHEMA case=sum-normal /: Structured output fails the tool's declared schema.\n  Action: Return structuredContent conforming to outputSchema.\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 3,
+        "requestsSelfValidated": 3,
+        "casesEvaluated": 1,
+        "casesExecuted": 1,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 245,
+        "baselineTools": 1,
+        "baselineValidInputs": 1,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      },
+      "assertedRule": "OUTPUT_SCHEMA"
+    },
+    {
+      "label": "fallback",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--baseline",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\reviewed-baseline.json",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\cases.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\fallback.json",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "missing-result-type"
+      ],
+      "expectedExit": 0,
+      "observedExit": 0,
+      "stdout": "PASS protocol=2026-07-28 mode=local_mock_stdio exit=0\nOBSERVATION RESULT_TYPE_DEFAULT: Absent resultType accepted as complete by the required compatibility default.\nOBSERVATION RESULT_TYPE_DEFAULT: Absent resultType accepted as complete by the required compatibility default.\nOBSERVATION RESULT_TYPE_DEFAULT: Absent resultType accepted as complete by the required compatibility default.\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 3,
+        "requestsSelfValidated": 3,
+        "casesEvaluated": 1,
+        "casesExecuted": 1,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 245,
+        "baselineTools": 1,
+        "baselineValidInputs": 1,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      },
+      "assertedRule": null
+    },
+    {
+      "label": "input-witness",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--baseline",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\reviewed-baseline.json",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\cases.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\input-witness.json",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "input-regression"
+      ],
+      "expectedExit": 1,
+      "observedExit": 1,
+      "stdout": "FAIL protocol=2026-07-28 mode=local_mock_stdio exit=1\nSCHEMA_DRIFT case=- /tools/sum/inputSchema: The exact tool schema differs from the reviewed baseline.\n  Action: Review this drift; supplied cases do not prove general compatibility.\nINPUT_REGRESSION case=sum-normal /: Supplied arguments fail the candidate input schema.\n  Action: Restore accepted inputs or review consumers; no invalid call was sent.\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 2,
+        "requestsSelfValidated": 2,
+        "casesEvaluated": 1,
+        "casesExecuted": 0,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 288,
+        "baselineTools": 1,
+        "baselineValidInputs": 1,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      },
+      "assertedRule": "INPUT_REGRESSION"
+    },
+    {
+      "label": "output-witness",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--baseline",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\reviewed-baseline.json",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\cases.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\output-witness.json",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "output-regression"
+      ],
+      "expectedExit": 1,
+      "observedExit": 1,
+      "stdout": "FAIL protocol=2026-07-28 mode=local_mock_stdio exit=1\nSCHEMA_DRIFT case=- /tools/sum/outputSchema: The exact tool schema differs from the reviewed baseline.\n  Action: Review this drift; supplied cases do not prove general compatibility.\nOUTPUT_REGRESSION case=sum-normal /: Candidate output is rejected by the baseline schema.\n  Action: Restore the previous output or review consumers.\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 3,
+        "requestsSelfValidated": 3,
+        "casesEvaluated": 1,
+        "casesExecuted": 1,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 244,
+        "baselineTools": 1,
+        "baselineValidInputs": 1,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      },
+      "assertedRule": "OUTPUT_REGRESSION"
+    },
+    {
+      "label": "review-only",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--baseline",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\reviewed-baseline.json",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\cases.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\review-only.json",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "schema-drift-only"
+      ],
+      "expectedExit": 1,
+      "observedExit": 1,
+      "stdout": "REVIEW_REQUIRED protocol=2026-07-28 mode=local_mock_stdio exit=1\nSCHEMA_DRIFT case=- /tools/sum/inputSchema: The exact tool schema differs from the reviewed baseline.\n  Action: Review this drift; supplied cases do not prove general compatibility.\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 3,
+        "requestsSelfValidated": 3,
+        "casesEvaluated": 1,
+        "casesExecuted": 1,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 276,
+        "baselineTools": 1,
+        "baselineValidInputs": 1,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      },
+      "assertedRule": "SCHEMA_DRIFT"
+    },
+    {
+      "label": "expected-errors",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\error-cases.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\expected-errors.json",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "healthy"
+      ],
+      "expectedExit": 0,
+      "observedExit": 0,
+      "stdout": "PASS protocol=2026-07-28 mode=local_mock_stdio exit=0\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 5,
+        "requestsSelfValidated": 5,
+        "casesEvaluated": 3,
+        "casesExecuted": 3,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 245,
+        "baselineTools": 0,
+        "baselineValidInputs": 0,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      },
+      "assertedRule": null
+    },
+    {
+      "label": "paged-shapes",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\shape-cases.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\paged-shapes.json",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "paged"
+      ],
+      "expectedExit": 0,
+      "observedExit": 0,
+      "stdout": "PASS protocol=2026-07-28 mode=local_mock_stdio exit=0\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 6,
+        "requestsSelfValidated": 6,
+        "casesEvaluated": 3,
+        "casesExecuted": 3,
+        "casesSkipped": 0,
+        "toolListPages": 2,
+        "catalogBytes": 432,
+        "baselineTools": 0,
+        "baselineValidInputs": 0,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      },
+      "assertedRule": null
+    },
+    {
+      "label": "cursor-loop",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\cases.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\cursor-loop.json",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "cursor-loop"
+      ],
+      "expectedExit": 1,
+      "observedExit": 1,
+      "stdout": "FAIL protocol=2026-07-28 mode=local_mock_stdio exit=1\nCURSOR_LOOP case=- /: The tool-list cursor repeated.\n  Action: Return an advancing cursor or end pagination.\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 3,
+        "requestsSelfValidated": 3,
+        "casesEvaluated": 0,
+        "casesExecuted": 0,
+        "casesSkipped": 1,
+        "toolListPages": 2,
+        "catalogBytes": 4,
+        "baselineTools": 0,
+        "baselineValidInputs": 0,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      },
+      "assertedRule": "CURSOR_LOOP"
+    },
+    {
+      "label": "duplicate-id",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\cases.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\duplicate-id.json",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "duplicate-id"
+      ],
+      "expectedExit": 1,
+      "observedExit": 1,
+      "stdout": "FAIL protocol=2026-07-28 mode=local_mock_stdio exit=1\nDUPLICATE_RESPONSE case=sum-normal /id: The server repeated a completed response ID.\n  Action: Emit exactly one response per request.\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 3,
+        "requestsSelfValidated": 3,
+        "casesEvaluated": 1,
+        "casesExecuted": 1,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 245,
+        "baselineTools": 0,
+        "baselineValidInputs": 0,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      },
+      "assertedRule": "DUPLICATE_RESPONSE"
+    },
+    {
+      "label": "unsupported-version",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\cases.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\unsupported-version.json",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "unsupported-version-error"
+      ],
+      "expectedExit": 1,
+      "observedExit": 1,
+      "stdout": "FAIL protocol=2026-07-28 mode=local_mock_stdio exit=1\nUNSUPPORTED_PROTOCOL case=- /: The server rejected the pinned protocol version.\n  Action: Use a 2026-07-28 server; no negotiation down occurs.\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 1,
+        "requestsSelfValidated": 1,
+        "casesEvaluated": 0,
+        "casesExecuted": 0,
+        "casesSkipped": 1,
+        "toolListPages": 0,
+        "catalogBytes": 0,
+        "baselineTools": 0,
+        "baselineValidInputs": 0,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      },
+      "assertedRule": "UNSUPPORTED_PROTOCOL"
+    },
+    {
+      "label": "input-required",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\cases.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\input-required.json",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "input-required"
+      ],
+      "expectedExit": 1,
+      "observedExit": 1,
+      "stdout": "FAIL protocol=2026-07-28 mode=local_mock_stdio exit=1\nUNSUPPORTED_INTERACTION case=sum-normal /: This valid result requires another input round trip.\n  Action: Use a multi-round client; coverage is incomplete.\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 3,
+        "requestsSelfValidated": 3,
+        "casesEvaluated": 1,
+        "casesExecuted": 1,
+        "casesSkipped": 0,
+        "toolListPages": 1,
+        "catalogBytes": 245,
+        "baselineTools": 0,
+        "baselineValidInputs": 0,
+        "notImplemented": [
+          "general schema containment",
+          "MRTR continuation",
+          "HTTP",
+          "legacy profiles"
+        ]
+      },
+      "assertedRule": "UNSUPPORTED_INTERACTION"
+    },
+    {
+      "label": "diff-identical",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "diff",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\reviewed-baseline.json",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\reviewed-baseline.json",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\diff-identical.json"
+      ],
+      "expectedExit": 0,
+      "observedExit": 0,
+      "stdout": "PASS protocol=2026-07-28 mode=offline_snapshot_diff exit=0\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 0,
+        "casesExecuted": 0,
+        "toolListPages": 0,
+        "baselineTools": 1,
+        "candidateTools": 1,
+        "notImplemented": [
+          "general schema containment"
+        ]
+      },
+      "assertedRule": null
+    },
+    {
+      "label": "diff-changed",
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "diff",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\reviewed-baseline.json",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\changed-baseline.json",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m2\\diff-changed.json"
+      ],
+      "expectedExit": 1,
+      "observedExit": 1,
+      "stdout": "REVIEW_REQUIRED protocol=2026-07-28 mode=offline_snapshot_diff exit=1\nSCHEMA_DRIFT case=- /tools/sum/inputSchema: The exact tool schema differs from the reviewed baseline.\n  Action: Review this drift; supplied cases do not prove general compatibility.\n",
+      "stderr": "",
+      "coverage": {
+        "requestsExecuted": 0,
+        "casesExecuted": 0,
+        "toolListPages": 0,
+        "baselineTools": 1,
+        "candidateTools": 1,
+        "notImplemented": [
+          "general schema containment"
+        ]
+      },
+      "assertedRule": "SCHEMA_DRIFT"
+    }
+  ]
+}

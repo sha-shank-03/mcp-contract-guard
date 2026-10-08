@@ -1,0 +1,41 @@
+{
+  "reportVersion": 1,
+  "protocolVersion": "2026-07-28",
+  "schemaSha256": "ef70b61f99b6d2e5e3b46863822eab08dff6a45bedc7a08914e0e5b133f40203",
+  "executionMode": "offline_snapshot_diff",
+  "status": "review_required",
+  "findings": [
+    {
+      "ruleId": "SCHEMA_DRIFT",
+      "severity": "review",
+      "tool": "sum",
+      "pointer": "/tools/sum/inputSchema",
+      "changedPointers": [
+        "/properties/optional"
+      ],
+      "summary": "The exact tool schema differs from the reviewed baseline.",
+      "remedy": "Review this drift; supplied cases do not prove general compatibility.",
+      "compatibility": "not_proven",
+      "witness": null
+    }
+  ],
+  "observations": [],
+  "compatibility": {
+    "assessment": "limited_to_exact_snapshot_drift",
+    "inputWitnesses": 0,
+    "outputWitnesses": 0,
+    "universalCompatibilityProven": false
+  },
+  "coverage": {
+    "requestsExecuted": 0,
+    "casesExecuted": 0,
+    "toolListPages": 0,
+    "baselineTools": 1,
+    "candidateTools": 1,
+    "notImplemented": [
+      "general schema containment"
+    ]
+  },
+  "exitCode": 1,
+  "elapsedMs": 1531.0
+}

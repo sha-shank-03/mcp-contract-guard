@@ -1,0 +1,162 @@
+{
+  "retrievedDate": "2026-10-07",
+  "dependencies": [
+    {
+      "package": "jsonschema",
+      "version": "4.25.1",
+      "metadataUrl": "https://pypi.org/pypi/jsonschema/4.25.1/json",
+      "license": "MIT",
+      "requiresPython": ">=3.9",
+      "requiresDist": [
+        "attrs>=22.2.0",
+        "jsonschema-specifications>=2023.03.6",
+        "referencing>=0.28.4",
+        "rpds-py>=0.7.1",
+        "fqdn; extra == \"format\"",
+        "idna; extra == \"format\"",
+        "isoduration; extra == \"format\"",
+        "jsonpointer>1.13; extra == \"format\"",
+        "rfc3339-validator; extra == \"format\"",
+        "rfc3987; extra == \"format\"",
+        "uri-template; extra == \"format\"",
+        "webcolors>=1.11; extra == \"format\"",
+        "fqdn; extra == \"format-nongpl\"",
+        "idna; extra == \"format-nongpl\"",
+        "isoduration; extra == \"format-nongpl\"",
+        "jsonpointer>1.13; extra == \"format-nongpl\"",
+        "rfc3339-validator; extra == \"format-nongpl\"",
+        "rfc3986-validator>0.1.0; extra == \"format-nongpl\"",
+        "rfc3987-syntax>=1.1.0; extra == \"format-nongpl\"",
+        "uri-template; extra == \"format-nongpl\"",
+        "webcolors>=24.6.0; extra == \"format-nongpl\""
+      ],
+      "wheels": [
+        {
+          "filename": "jsonschema-4.25.1-py3-none-any.whl",
+          "sha256": "3fba0169e345c7175110351d456342c364814cfcf3b964ba4587f22915230a63"
+        }
+      ]
+    },
+    {
+      "package": "referencing",
+      "version": "0.36.2",
+      "metadataUrl": "https://pypi.org/pypi/referencing/0.36.2/json",
+      "license": "MIT",
+      "requiresPython": ">=3.9",
+      "requiresDist": [
+        "attrs>=22.2.0",
+        "rpds-py>=0.7.0",
+        "typing-extensions>=4.4.0; python_version < \"3.13\""
+      ],
+      "wheels": [
+        {
+          "filename": "referencing-0.36.2-py3-none-any.whl",
+          "sha256": "e8699adbbf8b5c7de96d8ffa0eb5c158b3beafce084968e2ea8bb08c6794dcd0"
+        }
+      ]
+    },
+    {
+      "package": "attrs",
+      "version": "25.3.0",
+      "metadataUrl": "https://pypi.org/pypi/attrs/25.3.0/json",
+      "license": "MIT",
+      "requiresPython": ">=3.8",
+      "requiresDist": [
+        "cloudpickle; platform_python_implementation == \"CPython\" and extra == \"benchmark\"",
+        "hypothesis; extra == \"benchmark\"",
+        "mypy>=1.11.1; (platform_python_implementation == \"CPython\" and python_version >= \"3.10\") and extra == \"benchmark\"",
+        "pympler; extra == \"benchmark\"",
+        "pytest-codspeed; extra == \"benchmark\"",
+        "pytest-mypy-plugins; (platform_python_implementation == \"CPython\" and python_version >= \"3.10\") and extra == \"benchmark\"",
+        "pytest-xdist[psutil]; extra == \"benchmark\"",
+        "pytest>=4.3.0; extra == \"benchmark\"",
+        "cloudpickle; platform_python_implementation == \"CPython\" and extra == \"cov\"",
+        "coverage[toml]>=5.3; extra == \"cov\"",
+        "hypothesis; extra == \"cov\"",
+        "mypy>=1.11.1; (platform_python_implementation == \"CPython\" and python_version >= \"3.10\") and extra == \"cov\"",
+        "pympler; extra == \"cov\"",
+        "pytest-mypy-plugins; (platform_python_implementation == \"CPython\" and python_version >= \"3.10\") and extra == \"cov\"",
+        "pytest-xdist[psutil]; extra == \"cov\"",
+        "pytest>=4.3.0; extra == \"cov\"",
+        "cloudpickle; platform_python_implementation == \"CPython\" and extra == \"dev\"",
+        "hypothesis; extra == \"dev\"",
+        "mypy>=1.11.1; (platform_python_implementation == \"CPython\" and python_version >= \"3.10\") and extra == \"dev\"",
+        "pre-commit-uv; extra == \"dev\"",
+        "pympler; extra == \"dev\"",
+        "pytest-mypy-plugins; (platform_python_implementation == \"CPython\" and python_version >= \"3.10\") and extra == \"dev\"",
+        "pytest-xdist[psutil]; extra == \"dev\"",
+        "pytest>=4.3.0; extra == \"dev\"",
+        "cogapp; extra == \"docs\"",
+        "furo; extra == \"docs\"",
+        "myst-parser; extra == \"docs\"",
+        "sphinx; extra == \"docs\"",
+        "sphinx-notfound-page; extra == \"docs\"",
+        "sphinxcontrib-towncrier; extra == \"docs\"",
+        "towncrier; extra == \"docs\"",
+        "cloudpickle; platform_python_implementation == \"CPython\" and extra == \"tests\"",
+        "hypothesis; extra == \"tests\"",
+        "mypy>=1.11.1; (platform_python_implementation == \"CPython\" and python_version >= \"3.10\") and extra == \"tests\"",
+        "pympler; extra == \"tests\"",
+        "pytest-mypy-plugins; (platform_python_implementation == \"CPython\" and python_version >= \"3.10\") and extra == \"tests\"",
+        "pytest-xdist[psutil]; extra == \"tests\"",
+        "pytest>=4.3.0; extra == \"tests\"",
+        "mypy>=1.11.1; (platform_python_implementation == \"CPython\" and python_version >= \"3.10\") and extra == \"tests-mypy\"",
+        "pytest-mypy-plugins; (platform_python_implementation == \"CPython\" and python_version >= \"3.10\") and extra == \"tests-mypy\""
+      ],
+      "wheels": [
+        {
+          "filename": "attrs-25.3.0-py3-none-any.whl",
+          "sha256": "427318ce031701fea540783410126f03899a97ffc6f61596ad581ac2e40e3bc3"
+        }
+      ]
+    },
+    {
+      "package": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "metadataUrl": "https://pypi.org/pypi/jsonschema-specifications/2025.9.1/json",
+      "license": "MIT",
+      "requiresPython": ">=3.9",
+      "requiresDist": [
+        "referencing>=0.31.0"
+      ],
+      "wheels": [
+        {
+          "filename": "jsonschema_specifications-2025.9.1-py3-none-any.whl",
+          "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe"
+        }
+      ]
+    },
+    {
+      "package": "rpds-py",
+      "version": "0.27.1",
+      "metadataUrl": "https://pypi.org/pypi/rpds-py/0.27.1/json",
+      "license": "MIT",
+      "requiresPython": ">=3.9",
+      "requiresDist": null,
+      "wheels": [
+        {
+          "filename": "rpds_py-0.27.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "cb56c6210ef77caa58e16e8c17d35c63fe3f5b60fd9ba9d424470c3400bcf9ed"
+        },
+        {
+          "filename": "rpds_py-0.27.1-cp311-cp311-win_amd64.whl",
+          "sha256": "b4938466c6b257b2f5c4ff98acd8128ec36b5059e5c8f8372d79316b1c36bb15"
+        }
+      ]
+    },
+    {
+      "package": "typing-extensions",
+      "version": "4.15.0",
+      "metadataUrl": "https://pypi.org/pypi/typing-extensions/4.15.0/json",
+      "license": "PSF-2.0",
+      "requiresPython": ">=3.9",
+      "requiresDist": null,
+      "wheels": [
+        {
+          "filename": "typing_extensions-4.15.0-py3-none-any.whl",
+          "sha256": "f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548"
+        }
+      ]
+    }
+  ]
+}

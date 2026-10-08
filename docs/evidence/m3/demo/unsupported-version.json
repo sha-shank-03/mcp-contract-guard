@@ -1,0 +1,66 @@
+{
+  "reportVersion": 1,
+  "protocolVersion": "2026-07-28",
+  "schemaSha256": "ef70b61f99b6d2e5e3b46863822eab08dff6a45bedc7a08914e0e5b133f40203",
+  "executionMode": "local_mock_stdio",
+  "scope": "M2: modern stdio, bounded catalog, explicit cases and reviewed baseline",
+  "status": "fail",
+  "findings": [
+    {
+      "ruleId": "UNSUPPORTED_PROTOCOL",
+      "severity": "error",
+      "method": "server/discover",
+      "requestId": 1,
+      "caseId": null,
+      "tool": null,
+      "pointer": "",
+      "summary": "The server rejected the pinned protocol version.",
+      "remedy": "Use a 2026-07-28 server; no negotiation down occurs.",
+      "details": {}
+    }
+  ],
+  "observations": [],
+  "cases": [
+    {
+      "caseId": "sum-normal",
+      "tool": "sum",
+      "status": "skipped"
+    }
+  ],
+  "compatibility": {
+    "baselineProvided": false,
+    "assessment": "supplied_cases_and_exact_drift_only",
+    "inputWitnesses": 0,
+    "outputWitnesses": 0,
+    "universalCompatibilityProven": false
+  },
+  "coverage": {
+    "requestsExecuted": 1,
+    "requestsSelfValidated": 1,
+    "casesEvaluated": 0,
+    "casesExecuted": 0,
+    "casesSkipped": 1,
+    "toolListPages": 0,
+    "catalogBytes": 0,
+    "baselineTools": 0,
+    "baselineValidInputs": 0,
+    "notImplemented": [
+      "general schema containment",
+      "MRTR continuation",
+      "HTTP",
+      "legacy profiles"
+    ]
+  },
+  "exitCode": 1,
+  "elapsedMs": 797.0,
+  "cleanup": {
+    "directChildExited": true,
+    "forcedTermination": false,
+    "readerThreadsStopped": true,
+    "serverPid": 25572,
+    "stderrBytes": 0,
+    "cancellationAttempted": false,
+    "cancellationWriteCompleted": false,
+    "descendantContainment": "not_provided"
+  }
+}

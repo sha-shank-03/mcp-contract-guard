@@ -1,0 +1,31 @@
+{
+  "review_id": "FINAL",
+  "reviewed_at_utc": "2026-10-08T02:28:30.854350+00:00",
+  "status": "passed",
+  "summary": "Whole repository independently accepted for agreed local MVP.",
+  "assertions": "39 meaningful tests pass in actual main aggregate discovery. Main freshly executes all15 documented local_mock_stdio/offline_snapshot_diff scenarios: exact positive/fault gates, baseline-valid input/output witnesses versus review-only drift, three explicit outcome kinds, two pages/three shapes, malformed/unsupported interaction detection, two zero-request offline diffs and unchanged actual baseline/candidate hashes. Native main PID lookup finds none of13 saved direct mocks; every stdio report records exited child/stopped readers. Six copied notices match actual installed bytes;57 preserved files match current SHA.",
+  "inspection": "Main inspected strict modern stdio framing/correlation/request-schema validation, bounds/deadline/cleanup, pinned schema, baseline and witnessed compatibility paths at M1/M2; now inspected final checker/two optimization-safe gate tests, Windows absolute-interpreter and POSIX commands, CLI/report reference, architecture/contribution/limits, Apache2 and combined upstream schema notice, exact six runtime notices and prepared pinned read-only Windows/Linux CI. Main inspected actual fresh reports and native cleanup outside checker assertions, installed closure health, primary action/license/runtime assets and complete delivered source manifest.",
+  "limitations": "Pinned MCP2026-07-28 modern stdio only, deterministic local mock server and offline diffs; no HTTP/legacy/MRTR/model/upstream conformance or production integration. Schema drift can require review without proving a break; cases/witnesses are limited coverage, not semantic schema containment/universal compatibility/security proof. Direct-child cleanup is not descendant containment/OS isolation. Runtime notice inventory is not exhaustive embedded native-component legal/security audit. Hosted GitHub CI/actionlint/workflow engine, POSIX/Linux setup/runtime, live providers/production/security/performance execution remain unexecuted or outside scope. No install/download/push/publication/deployment performed by final main checks. Exact local source bytes retained.",
+  "source_file_count": 108,
+  "repository": "mcp-contract-guard",
+  "scope": "Coordinating-agent review, separate from implementation worker; not third-party certification.",
+  "local_path_redaction": "Personal host prefixes replaced. Original receipt hashes below describe the unredacted local source; exports have separate hashes.",
+  "publication_change_scope": "README/AGENTS/contributor/context/evidence exports and ignore/attribute portability only. Runtime, tests, fixtures and dependency pins remain as accepted.",
+  "command_receipt_exports": [
+    {
+      "path": "docs/verification/main-command-00-final-main-tests.json",
+      "source_receipt_sha256": "1d5ef693c8d1a04828aa338bd3c43987a31c4a68f552e0301e4065654dbde627",
+      "export_sha256": "c400e2623be2c78411eafd33f2ed12aa3f1c2a942f1897117697ae083d36cb97"
+    },
+    {
+      "path": "docs/verification/main-command-01-final-main-demo.json",
+      "source_receipt_sha256": "ebb586d7a78b2b3266d48754d1eecb8988e1c14cbeffb7c680935e63620383ec",
+      "export_sha256": "2b07c4ce5622f2bf58132c697bb760b87cae3bbe4b376a75e503db4e336532fe"
+    },
+    {
+      "path": "docs/verification/main-command-02-final-main-dependency-health.json",
+      "source_receipt_sha256": "256bc1ec1f077b54bb21629613b24d4c7235569953e075077577acb3996eb5f7",
+      "export_sha256": "ece13225f3816fa166ebd3a351dbfc22e7defa4265e0a9ff36ca4a818fc51f38"
+    }
+  ]
+}

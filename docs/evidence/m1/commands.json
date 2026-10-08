@@ -1,0 +1,102 @@
+{
+  "recordedAtUtc": "2026-10-07T16:11:21.449591+00:00",
+  "userDate": "2026-10-07",
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cwd": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard",
+  "execution": "deterministic local mock; no model calls",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "snapshot",
+        "--out",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\baseline.json",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m1\\snapshot.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "healthy"
+      ],
+      "expectedExit": 0,
+      "observedExit": 0,
+      "stdout": "PASS protocol=2026-07-28 mode=local_mock_stdio exit=0\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\cases.json",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m1\\healthy.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "healthy"
+      ],
+      "expectedExit": 0,
+      "observedExit": 0,
+      "stdout": "PASS protocol=2026-07-28 mode=local_mock_stdio exit=0\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\cases.json",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m1\\bad-output.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "bad-output"
+      ],
+      "expectedExit": 1,
+      "observedExit": 1,
+      "stdout": "FAIL protocol=2026-07-28 mode=local_mock_stdio exit=1\nOUTPUT_SCHEMA case=sum-normal /: Structured output fails the tool's declared schema.\n  Action: Return structuredContent conforming to outputSchema.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mcp_contract_guard",
+        "check",
+        "--cases",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\cases.json",
+        "--report",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\docs\\evidence\\m1\\missing-result-type.json",
+        "--execution-mode",
+        "local_mock_stdio",
+        "--",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\examples\\faulty_server.py",
+        "--mode",
+        "missing-result-type"
+      ],
+      "expectedExit": 0,
+      "observedExit": 0,
+      "stdout": "PASS protocol=2026-07-28 mode=local_mock_stdio exit=0\nOBSERVATION RESULT_TYPE_DEFAULT: Absent resultType accepted as complete by the required compatibility default.\nOBSERVATION RESULT_TYPE_DEFAULT: Absent resultType accepted as complete by the required compatibility default.\nOBSERVATION RESULT_TYPE_DEFAULT: Absent resultType accepted as complete by the required compatibility default.\n",
+      "stderr": ""
+    }
+  ]
+}

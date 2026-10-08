@@ -1,0 +1,99 @@
+{
+  "retrievedAtUtc": "2026-10-08T02:06:14.614709+00:00",
+  "scope": "Read-only official GitHub release/tag/commit/action/license metadata; no action execution or package download",
+  "actions": [
+    {
+      "repository": "actions/checkout",
+      "releaseTagObserved": "v7.0.1",
+      "releaseUrl": "https://github.com/actions/checkout/releases/tag/v7.0.1",
+      "releaseMetadataUrl": "https://api.github.com/repos/actions/checkout/releases/latest",
+      "tagMetadataUrl": "https://api.github.com/repos/actions/checkout/git/ref/tags/v7.0.1",
+      "commitSha": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "commitUrl": "https://github.com/actions/checkout/commit/3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actionSourceUrl": "https://raw.githubusercontent.com/actions/checkout/3d3c42e5aac5ba805825da76410c181273ba90b1/action.yml",
+      "actionSourceSha256": "d59219cb79590abdb877deaa14e3b65a00c05318bf5a6f3b989b9162b5d08c35",
+      "actionHeader": [
+        "name: 'Checkout'",
+        "description: 'Checkout a Git repository at a particular version'",
+        "inputs:",
+        "  repository:",
+        "    description: 'Repository name with owner. For example, actions/checkout'",
+        "    default: ${{ github.repository }}",
+        "  ref:",
+        "    description: >",
+        "      The branch, tag or SHA to checkout. When checking out the repository that",
+        "      triggered a workflow, this defaults to the reference or SHA for that"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/actions/checkout/3d3c42e5aac5ba805825da76410c181273ba90b1/LICENSE",
+      "licenseSha256": "3e855ffa704114a51628ef8f0bf3aeb41728adf9d9070e263bf58aa5640b0eb5",
+      "licenseHeader": [
+        "",
+        "The MIT License (MIT)",
+        "",
+        "Copyright (c) 2018 GitHub, Inc. and contributors"
+      ]
+    },
+    {
+      "repository": "actions/setup-python",
+      "releaseTagObserved": "v7.0.0",
+      "releaseUrl": "https://github.com/actions/setup-python/releases/tag/v7.0.0",
+      "releaseMetadataUrl": "https://api.github.com/repos/actions/setup-python/releases/latest",
+      "tagMetadataUrl": "https://api.github.com/repos/actions/setup-python/git/ref/tags/v7.0.0",
+      "commitSha": "5fda3b95a4ea91299a34e894583c3862153e4b97",
+      "commitUrl": "https://github.com/actions/setup-python/commit/5fda3b95a4ea91299a34e894583c3862153e4b97",
+      "actionSourceUrl": "https://raw.githubusercontent.com/actions/setup-python/5fda3b95a4ea91299a34e894583c3862153e4b97/action.yml",
+      "actionSourceSha256": "e6dc8046c02bd3c9f7bf2fea6ba2e59b4e83c7de2b26ec2149a1627f5d66f96c",
+      "actionHeader": [
+        "---",
+        "name: \"Setup Python\"",
+        "description: \"Set up a specific version of Python and add the command-line tools to the PATH.\"",
+        "author: \"GitHub\"",
+        "inputs:",
+        "  python-version:",
+        "    description: \"Version range or exact version of Python or PyPy to use, using SemVer's version range syntax. Reads from .python-version if unset.\"",
+        "  python-version-file:",
+        "    description: \"File containing the Python version to use. Example: .python-version\"",
+        "  cache:"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/actions/setup-python/5fda3b95a4ea91299a34e894583c3862153e4b97/LICENSE",
+      "licenseSha256": "7d070f6b64d9bcc530fe99cc21eaaa4b3c364e0b2d367d7735671fa202a03b32",
+      "licenseHeader": [
+        "",
+        "The MIT License (MIT)",
+        "",
+        "Copyright (c) 2018 GitHub, Inc. and contributors"
+      ]
+    },
+    {
+      "repository": "actions/upload-artifact",
+      "releaseTagObserved": "v7.0.2",
+      "releaseUrl": "https://github.com/actions/upload-artifact/releases/tag/v7.0.2",
+      "releaseMetadataUrl": "https://api.github.com/repos/actions/upload-artifact/releases/latest",
+      "tagMetadataUrl": "https://api.github.com/repos/actions/upload-artifact/git/ref/tags/v7.0.2",
+      "commitSha": "cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+      "commitUrl": "https://github.com/actions/upload-artifact/commit/cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+      "actionSourceUrl": "https://raw.githubusercontent.com/actions/upload-artifact/cf430e030ddbb5b0abf93d22962f4752f3646cd9/action.yml",
+      "actionSourceSha256": "c5979822866a72362e609844b6ebe77d4b7e759af68cc1c2c425dcf51481fab4",
+      "actionHeader": [
+        "name: 'Upload a Build Artifact'",
+        "description: 'Upload a build artifact that can be used by subsequent workflow steps'",
+        "author: 'GitHub'",
+        "inputs:",
+        "  name:",
+        "    description: 'Artifact name. If the `archive` input is `false`, the name of the file uploaded will be the artifact name.'",
+        "    default: 'artifact'",
+        "  path:",
+        "    description: 'A file, directory or wildcard pattern that describes what to upload.'",
+        "    required: true"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/actions/upload-artifact/cf430e030ddbb5b0abf93d22962f4752f3646cd9/LICENSE",
+      "licenseSha256": "3e855ffa704114a51628ef8f0bf3aeb41728adf9d9070e263bf58aa5640b0eb5",
+      "licenseHeader": [
+        "",
+        "The MIT License (MIT)",
+        "",
+        "Copyright (c) 2018 GitHub, Inc. and contributors"
+      ]
+    }
+  ]
+}

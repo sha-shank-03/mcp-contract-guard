@@ -1,0 +1,27 @@
+{
+  "recordedAtUtc": "2026-10-07T15:35:36.872599+00:00",
+  "basedOnMainReceipt": "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\coordination\\acceptance\\mcp-contract-guard\\m1-output-collision.json",
+  "argv": [
+    "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+    "-m",
+    "mcp_contract_guard",
+    "snapshot",
+    "--out",
+    "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\work\\m1-collision-after.json",
+    "--report",
+    "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\work\\m1-collision-after.json",
+    "--execution-mode",
+    "local_mock_stdio",
+    "--",
+    "C:\\Users\\shash\\Documents\\CodexPortfolios\\agentic-ai-2026-10-07\\mcp-contract-guard\\.venv\\Scripts\\python.exe",
+    "examples/faulty_server.py",
+    "--mode",
+    "healthy"
+  ],
+  "observedExit": 2,
+  "stdout": "FAIL protocol=2026-07-28 mode=local_mock_stdio exit=2\nCONFIGURATION case=- /: Snapshot output and report refer to the same file.\n  Action: Choose distinct files; the collided paths will not be written.\n",
+  "stderr": "",
+  "originalBytesPreserved": true,
+  "beforeSha256": "87ca16b14470d54794be7bc710b4ebf0be3ff88b53f9842e6ce970e924f94514",
+  "afterSha256": "87ca16b14470d54794be7bc710b4ebf0be3ff88b53f9842e6ce970e924f94514"
+}

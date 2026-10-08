@@ -1,0 +1,62 @@
+name: Offline mock contract checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mock-checks-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  mock-checks:
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    defaults:
+      run:
+        shell: bash
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      PIP_DISABLE_PIP_VERSION_CHECK: '1'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1; docs/ci-provenance.json
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.11.9'
+          architecture: x64
+      - name: Install only the exact hash-locked wheels
+        run: python -m pip install --require-hashes --only-binary=:all: -r requirements.lock
+      - name: Verify dependency closure
+        run: python -m pip check
+      - name: M1 regression tests
+        run: python -m unittest discover -s tests -p 'test_m1*.py' -v
+      - name: M2 contract tests
+        run: python -m unittest discover -s tests -p test_m2_contracts.py -v
+      - name: M2 raw wire tests
+        run: python -m unittest discover -s tests -p test_m2_wire.py -v
+      - name: M2 preservation tests
+        run: python -m unittest discover -s tests -p test_m2_preservation.py -v
+      - name: Demo gate checks
+        run: python -m unittest discover -s tests -p test_demo.py -v
+      - name: Assert fresh mock scenarios and offline diff
+        run: python scripts/demo.py --out-dir work/ci-demo
+      - name: Retain synthetic demo evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: mock-evidence-${{ matrix.os }}
+          path: work/ci-demo/
+          if-no-files-found: ignore
+          retention-days: 7

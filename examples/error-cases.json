@@ -1,0 +1,9 @@
+{
+  "caseVersion": 1,
+  "protocolVersion": "2026-07-28",
+  "cases": [
+    {"id": "sum-normal", "tool": "sum", "arguments": {"a": 2, "b": 3}, "expect": {"kind": "success"}, "expectedStructuredContent": 5},
+    {"id": "invalid-integer", "tool": "sum", "arguments": {"a": "synthetic invalid integer", "b": 3}, "allowInvalidArguments": true, "expect": {"kind": "tool_error"}},
+    {"id": "unknown-tool", "tool": "missing", "arguments": {}, "expect": {"kind": "rpc_error", "code": -32602}}
+  ]
+}

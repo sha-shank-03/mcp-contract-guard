@@ -1,0 +1,88 @@
+{
+  "reportVersion": 1,
+  "protocolVersion": "2026-07-28",
+  "schemaSha256": "ef70b61f99b6d2e5e3b46863822eab08dff6a45bedc7a08914e0e5b133f40203",
+  "executionMode": "local_mock_stdio",
+  "scope": "M2: modern stdio, bounded catalog, explicit cases and reviewed baseline",
+  "status": "fail",
+  "findings": [
+    {
+      "ruleId": "SCHEMA_DRIFT",
+      "severity": "review",
+      "tool": "sum",
+      "pointer": "/tools/sum/outputSchema",
+      "changedPointers": [
+        "/type"
+      ],
+      "summary": "The exact tool schema differs from the reviewed baseline.",
+      "remedy": "Review this drift; supplied cases do not prove general compatibility.",
+      "compatibility": "not_proven",
+      "witness": null
+    },
+    {
+      "ruleId": "OUTPUT_REGRESSION",
+      "severity": "error",
+      "method": "tools/call",
+      "requestId": 3,
+      "caseId": "sum-normal",
+      "tool": "sum",
+      "pointer": "",
+      "summary": "Candidate output is rejected by the baseline schema.",
+      "remedy": "Restore the previous output or review consumers.",
+      "details": {
+        "schemaIssues": [
+          {
+            "instancePointer": "",
+            "schemaPointer": "/type",
+            "keyword": "type"
+          }
+        ],
+        "witness": "supplied_case"
+      }
+    }
+  ],
+  "observations": [],
+  "cases": [
+    {
+      "caseId": "sum-normal",
+      "tool": "sum",
+      "status": "fail"
+    }
+  ],
+  "compatibility": {
+    "baselineProvided": true,
+    "assessment": "supplied_cases_and_exact_drift_only",
+    "inputWitnesses": 0,
+    "outputWitnesses": 1,
+    "universalCompatibilityProven": false
+  },
+  "coverage": {
+    "requestsExecuted": 3,
+    "requestsSelfValidated": 3,
+    "casesEvaluated": 1,
+    "casesExecuted": 1,
+    "casesSkipped": 0,
+    "toolListPages": 1,
+    "catalogBytes": 244,
+    "baselineTools": 1,
+    "baselineValidInputs": 1,
+    "notImplemented": [
+      "general schema containment",
+      "MRTR continuation",
+      "HTTP",
+      "legacy profiles"
+    ]
+  },
+  "exitCode": 1,
+  "elapsedMs": 5203.0,
+  "cleanup": {
+    "directChildExited": true,
+    "forcedTermination": false,
+    "readerThreadsStopped": true,
+    "serverPid": 19504,
+    "stderrBytes": 0,
+    "cancellationAttempted": false,
+    "cancellationWriteCompleted": false,
+    "descendantContainment": "not_provided"
+  }
+}
